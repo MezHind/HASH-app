@@ -1,0 +1,40 @@
+<?php
+if(isset($_SESSION['id'])){
+    header('location:dsq.php');
+  }
+require('./dashboard/util.php');
+if(isset($_GET['action']) && !empty($_GET['action']) && $_GET['action']=="logout")
+{
+ // on arrête la session (voir la définition de la fonction dans le fichier util.php)
+ clean_php_session(); 
+ // puis on redirect l'utilisateur vers la page d'accueil
+ header("Location:./dashboard/login.php"); 
+ exit();
+}
+
+?>
+<html lang="fr">
+<head>
+    <title>Recrutement en ligne</title>
+    <meta name="author" content="saida stifi, hajar azlafi, hined elmezouari, amina khachiaa">
+    <meta name="keywords" content="recrutement, emploi, stage, travail, postuler, recruter">
+    <link rel="stylesheet" href="projet.css">
+    <icon src = "notre_logo.jpg"></icon>
+</head>
+<body class="body_prcpl">
+    
+    <h1 class="h1_pp"><img src="notre_logo.jpg" class="notre_logo">HASH RECRUTEMENT</h1>
+    <fieldset class="back">
+    <h2><ins><i>Bienvenue sur votre communauté professionnelle</i></ins></h2>
+    <div>
+    <a href="choix.html">
+    <button class="b1">Inscription</button><br></a>
+    <a href="connexion.html">
+    <button class="b1">Connexion </button></a><br>
+     </div>
+     <div class="ct"><h3>Ou</h3></div><br>
+    <button class="bt"><img src="go.jpeg" class="img_pp">Continuer avec Google</button>
+    </fieldset>
+    <script src="projet.js" defer></script>
+</body>
+</html>
