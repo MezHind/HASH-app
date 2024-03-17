@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profil recruteur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile-main-rec">
+        
+        <div class="profil-container">
+            <div class="profil-cov">
+                <div class="profil-photo"><img src="images/icone-profil.png"></div>
+            </div>
+            <h3 class="nmp">Nom et prénom:</h3>
+            <h3 class="rec">Email:</h3>
+            <h3 class="rec">Poste:</h3>
+            <h3 class="rec">Téléphone:</h3>
+        </div>
+        <div class="info-entreprise">
+            <h3>Informations sur l'entreprise:</h3>
+            <p class="rec">Nom de l'entreprise:</p>
+            <p class="rec">Email de l'entreprise:</p>
+            <p class="rec">Numéro de téléphone:</p>
+            <p class="rec">Site web de l'entreprise:</p>
+            <p class="rec">Localisation de l'entreprise:</p>
+        </div> 
+        <div class="critere-selec">
+            <form action="">
+                <h3>Critères de sélection:</h3>
+                  <section>
+                    <label for="ep">Expérience professionnelle nécessaire:</label>
+                    <input type="text" id="ep">
+                  </section>
+                  <section>
+                    <label for="scor">Choisir le score à affecter:</label>
+                     <p>Pour les candidats ayant un BAC+2:</p>
+                     <section>
+                    <label for="">DEUST:</label>
+                     <input type="number">
+                     <label for="">DUT:</label>
+                     <input type="number">
+                     </section>
+                     <section>
+                    <label for="">BTS:</label>
+                     <input type="number">
+                     <label for="">DTS:</label>
+                     <input type="number">
+                     </section>
+                     <label for="">DT:</label>
+                     <input type="number">
+                     <p>Pour les candidats ayant un BAC+3:</p>
+                     <section>
+                     <label for="">LF:</label>
+                     <input type="number">
+                     <label for="">LP:</label>
+                     <input type="number">
+                     </section>
+                     <label for="">LST:</label>
+                     <input type="number">
+                     <p>Pour les candidats ayant un BAC+5:</p>
+                     <section>
+                        <label for="">MP:</label>
+                         <input type="number">
+                         <label for="">IE:</label>
+                         <input type="number">
+                         </section>
+                         <section>
+                        <label for="">MR:</label>
+                         <input type="number">
+                         <label for="">MST:</label>
+                         <input type="number">
+                         </section>
+                        <section>
+                            <label for="">Le nombre a ajouter au score des candidats ayant plus d'expérience: </label>
+                            <input type="number">
+                        </section>
+                  </section>
+                  <input type="submit">
+            </form>
+        </div> 
+        <div class="postulation">
+           <form action="">
+            <h3>Instructions pour postuler:</h3>
+            <section>
+                <label for="for">Lien vers un formulaire en ligne:</label>
+                <input type="text" id="for">
+            </section>
+            <section>
+                <label for="adrcv"> Adresse e-mail pour envoyer les CV:</label>
+                <input type="text" id="adrcv">
+            </section>
+            <input type="submit">
+           </form>
+        </div>
+        <div class="info-sup-rec">
+                <h2>Informations Suplémentaires:</h2>
+                <div class="info-sup">
+                    <h3>Biographie :</h3>
+                    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Rédigez une brève biographie professionnelle"></textarea>
+                </div>
+            <div class="info-sup">
+                    <h3>Langues parlées :</h3>
+                    <input type="text" id="langues" name="langues" placeholder="Langues que vous parlez couramment">
+                    </div>
+                <div class="info-sup">
+                    <h3>Intérêts professionnels :</h3>
+                    <input type="text" id="interets" name="interets" placeholder="Domaines ou industries d'intérêt">
+                </div>
+                <div class="info-sup">
+                    <h3>Historique des recrutements :</h3>
+                    <textarea id="recrutements" name="recrutements" rows="4" cols="50" placeholder="Liste des postes pour lesquels vous avez recruté"></textarea>
+                </div>
+                <div class="info-sup">
+                <h3>Formations et certifications :</h3>
+                <input type="text" id="formations" name="formations" placeholder="Formations et certifications dans le domaine du recrutement">
+                 </div>
+                 <div class="candidat-rec">
+                    <h3>Candidats à recruter:</h3>
+                        <div class="candidat-rec-row">
+                            <img src="images/PhotoProfil(me).jpg">
+                                <div>
+                                    <h3>Hajar Azlafi</h3>
+                                    <p>Développeuse Web Full Stack</p>
+                                    <a href="#">Ajouter</a>
+                                </div>
+                        </div>
+                        <div class="candidat-rec-row">
+                            <img src="images/PhotoProfil(me).jpg">
+                                <div>
+                                    <h3>Hajar Azlafi</h3>
+                                    <p>Développeuse Web Full Stack</p>
+                                    <a href="#">Ajouter</a>
+                                </div>
+                        </div>
+                        <div class="candidat-rec-row">
+                            <img src="images/PhotoProfil(me).jpg">
+                                <div>
+                                    <h3>Hajar Azlafi</h3>
+                                    <p>Développeuse Web Full Stack</p>
+                                    <a href="#">Ajouter</a>
+                                </div>
+                        </div>
+                </div>   
+            </div>
+
+    </div>
+    <button id="btnscroll">^</button>
+    <script src="main.js"></script>
+</body>
+</html>

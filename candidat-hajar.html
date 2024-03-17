@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Candidat</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+   
+    <!-----------------------------------profile------------------------------->
+    <div class="profil-main">
+        <!-- ---------------------profile-container-------------------- -->
+        <div class="profil-container">
+            <div class="profil-cov" onclick="demanderImportPhoto('profil-photo')">
+                <div class="profil-photo"><img src="images/icone-profil.png"></div>
+            </div>
+            <h3 class="nmp">Nom et Prénom</h3>
+            <h3 class="rec">Email:</h3>
+            <h3 class="rec">Téléphone:</h3>
+            <h3 class="rec">Mon CV</h3>
+            <label for="dd" class="description-txt" for>Description:</label>
+            <input  id="dd" placeholder="Décrivez-vous brièvement..." ></input>
+            
+        </div>
+        <!-- -------------------profile-description--------------------- -->
+            <div class="formation">
+                <h3>Formation académique :</h3> 
+                <form action="">   
+                    <section>
+                        <label for="ss">Nom de l'institution:</label> 
+                    <input type="text" id="ss">
+                    </section>
+                     <section>
+                        <label for="dp">Diplôme:</label>
+                     <input type="text" id="dp">
+                     </section>
+                     <section>
+                        <label for="dtd">Date de début:</label>
+                        <input type="date" id="dtd">
+                     </section>
+                     <section>
+                        <label for="dtf">Date de fin:</label>
+                        <input type="date" id="dtf">
+                     </section>
+                     <button class="remove-btn">supprimer</button>
+                     <input type="submit">
+                     <button class="add-btn">Ajouter</button>
+                </form>
+            </div>
+            <div class="compétence">
+                <h3>Compétences techniques:</h3>
+                <form action="">
+                  <section>
+                    <label for="pp">Langages de programmation maîtrisés:</label>
+                    <input type="text" id="pp" placeholder="ex : Python, Java, C++, etc.">
+                  </section>
+                  <section>
+                    <label for="ide">Environnements de développement (IDE) utilisés:</label>
+                    <input type="text" id="ide" placeholder="ex : eclipse,vs code,etc.">
+                </section>
+                <section>
+                    <label for="bd">Bases de données:</label>
+                    <input type="text" placeholder="ex:sql, plsql, etc." id="bd">
+                </section>
+                <section>
+                    <label for="se">Systèmes d'exploitation:</label>
+                    <input type="text" placeholder="ex:Windows, Linux, macOS,etc." id="se">
+                </section>
+                <section>
+                    <label for="frm">Frameworks:</label>
+                    <input type="text" id="frm" placeholder="ex : Django, Flask pour Python,etc.">
+                </section>
+                </form>
+                <input type="submit">
+            </div>
+            <div class="projets">
+                <h3>Projets personnels ou académiques:</h3>
+                <form action="">
+                    <section>
+                        <label for="pa">Descriptions de projets réalisés:</label>
+                        <input type="text" id="pa">
+                    </section>
+                    <section>
+                        <label for="tu">Les technologies utilisées:</label>
+                        <input type="text" id="tu">
+                    </section>
+                    <button class="remove-btn">supprimer</button>
+                    <input type="submit">
+                    <button class="add-btn">Ajouter</button>
+                </form>
+            </div>
+            <div class="Expérience">
+                <h3>Expérience professionnelle:</h3>
+                <form action="">
+                    <h4>Stages en entreprise</h4>
+                    <input type="text" placeholder="Nom de l'entreprise">
+                    <input type="text" placeholder="Rôle">
+                    <input type="date" placeholder="date de début">
+                    <input type="date" placeholder="date de fin">
+                    <h4>Emplois à temps partiel liés à l'informatique</h4>
+                    <input type="text" placeholder="Emploi">
+                    <button class="remove-btn">supprimer</button>
+                    <input type="submit">
+                    <button class="add-btn">Ajouter</button>
+                </form>
+            </div>
+            <div class="certification">
+                <h3>Certifications et formations complémentaires:</h3>
+                <form action="">
+                    <section>
+                        <label for="cp">Certifications pertinentes</label>
+                        <input type="text" id="cp" placeholder="ex : Cisco CCNA, AWS Certified Developer">
+                    </section>
+                    <button class="remove-btn">supprimer</button>
+                    <input type="submit">
+                    <button class="add-btn">Ajouter</button>
+                    <section>
+                        <label for="clng">Cours en ligne suivis</label>
+                        <input type="text" id="clng">
+                    </section>
+                    <button class="remove-btn">supprimer</button>
+                    <input type="submit">
+                    <button class="add-btn">Ajouter</button>
+                </form>
+                
+            </div>
+            <div class="langues">
+                <form action="">
+                    <h3>Langues:</h3>
+                    <section>
+                        <label for="nlg">La langue:</label>
+                        <input type="text" id="nlg">
+                    </section>
+                    <section>
+                        <label for="nv">Le niveau:</label>
+                        <select name="niveau de la langue" id="nv">
+                            <option value="débutant">débutant</option>
+                            <option value="intermédiaire">intermédiaire</option>
+                            <option value="bon niveau">bon niveau</option>
+                        </select>
+                    </section>
+                    <button class="remove-btn">supprimer</button>
+                    <input type="submit">
+                    <button class="add-btn">Ajouter</button>
+                </form>
+            </div>
+            <div class="centresIN">
+                <h3>Centres d'intérêt:</h3>
+                <form action="">
+                    <textarea name="Centres d'intérêt" id="ci" cols="70" rows="5" placeholder="Décriver ici votre participation à des clubs ou associations, ainsi que vos hobbis..."></textarea>
+                </form>
+                <input type="submit">
+            </div>
+        
+            <div class="publicité">
+                <h3>Publicité:</h3>
+                    <p>Développez vos compétences en informatique au Maroc</p>
+                        <div>
+                            <img src="images/it maroc.png" >
+                        </div>
+                <b>Opportunités IT au Maroc</b>
+        <a href="" class="ad-link">En savoir plus</a>
+        </div>
+
+
+        <div class="people">
+            <h3>Personnes que vous pourriez connaître</h3>
+               <input type="search" placeholder="Chercher sur des personnes">
+                <div class="people-row">
+                    <img src="images/PhotoProfil(me).jpg">
+                        <div>
+                            <h3>Hajar Azlafi</h3>
+                            <p>Développeuse Web Full Stack</p>
+                            <a href="#">Connecter</a>
+                        </div>
+                </div>
+                <div class="people-row">
+                    <img src="images/PhotoProfil(me).jpg">
+                        <div>
+                            <h3>Hajar Azlafi</h3>
+                            <p>Développeuse Web Full Stack</p>
+                            <a href="#">Connecter</a>
+                        </div>
+                </div>
+                <div class="people-row">
+                    <img src="images/PhotoProfil(me).jpg">
+                        <div>
+                            <h3>Hajar Azlafi</h3>
+                            <p>Développeuse Web Full Stack</p>
+                            <a href="#">Connecter</a>
+                        </div>
+                </div>
+                <div class="people-row">
+                    <img src="images/PhotoProfil(me).jpg">
+                        <div>
+                            <h3>Hajar Azlafi</h3>
+                            <p>Développeuse Web Full Stack</p>
+                            <a href="#">Connecter</a>
+                        </div>
+                </div>
+                <div class="people-row">
+                    <img src="images/PhotoProfil(me).jpg">
+                        <div>
+                            <h3>Hajar Azlafi</h3>
+                            <p>Développeuse Web Full Stack</p>
+                            <a href="#">Connecter</a>
+                        </div>
+                </div>
+        </div>   
+    </div>
+    <button id="btnscroll">^</button>
+    <script src="main.js"></script>
+</body>
+</html>

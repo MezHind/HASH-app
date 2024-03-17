@@ -1,0 +1,285 @@
+
+/* ------------------profile-container---------------- */
+.profil-container {
+    border:solid hsla(236, 39%, 65%, 0.781);
+    border-radius:15px;
+    max-width:625px;
+    padding-bottom: 10px;
+    margin-left:90px;
+    margin-top:15px;
+}
+.profil-cov{
+    height:200px;
+    max-width: 660px;
+    background-color:hsla(236, 39%, 65%, 0.44);
+    border-top-right-radius:13px;
+    border-top-left-radius: 13px;
+}
+.profil-photo img {
+    height:140px;
+    width:140px;
+    border-radius:50%;
+    border-top:rgba(255, 255, 255, 0.714) solid;
+    background-color:hwb(234 46% 34%);
+    position:relative;
+      top:120px;
+      left:50px;
+}
+.nmp{
+    margin-top: 80px;
+    margin-left:30px;
+}
+   
+label[class="description-txt"]{
+    margin-left:30px;
+    display:inline;
+}
+ .profil-container input {
+    padding:15px;
+    width:300px;
+}
+.profil-container>p{
+    margin-left:30px;
+}
+/* -------------------profile-description----------------- */
+.formation , .compétence , .projets , .Expérience ,.certification , .langues , .centresIN , .info-entreprise , .critere-selec , .postulation , .info-sup{
+  border:solid  hsla(236, 39%, 65%, 0.671);
+  border-radius:15px;
+  padding:15px;
+  max-width: 598px;
+  margin-left:90px;
+}
+.centresIN textarea{
+  display:block;
+}
+ 
+  /* Style des titres */
+  h2, h3, h4 {
+    color: hwb(236 20% 56%);
+  }
+  h2, h3{
+    text-decoration-line: underline;
+  }
+  h4 , label {
+    color: hwb(236 36% 40%);
+  }
+  
+
+  /* Style des formulaires */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  /* Style des champs de saisie */
+  input[type="text"],
+  input[type="date"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style des boutons */
+  input[type="submit"],
+  button {
+    background-color: hwb(236, 36%, 40%);
+    padding:  5px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  /* Style des boutons de suppression */
+  button.remove-btn {
+    background-color: #f44336d3;
+  }
+  
+  /* Style des boutons Ajouter */
+  button.add-btn {
+    background-color: hwb(236 36% 40%);
+  }
+  .profil-main {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:auto;
+    row-gap: 15px;
+  }
+  .profil-container{
+    grid-column:1/3;
+  }
+  .formation , .info-entreprise{
+    grid-column:1/3;
+  }
+  .compétence , .critere-selec , .postulation , .info-sup{
+    grid-column:1/3;
+  }
+  .projets{
+    grid-column:1/3;
+  }
+  .Expérience{
+    grid-column:1/3;
+  }
+  .certification{
+    grid-column:1/3;
+  }
+  .langues{
+    grid-column:1/3;
+  }
+  .centresIN{
+    grid-column:1/3;
+  }
+  .publicité{
+   grid-column:3/-1;
+   position:absolute;
+   right:15px;
+   top:25px;
+   border:solid hsla(236, 39%, 65%, 0.749);
+   border-radius: 15px;
+   padding:10px;
+  }
+  .publicité img{
+    height: 150px;
+    width:300px;
+  }
+  .people{
+    grid-column:3/-1;
+    position:absolute;
+    top:350px;
+    right:20px;
+    border: solid hsla(236, 39%, 65%, 0.749);
+    border-radius: 15px;
+    padding: 5px 30px;
+  }
+  
+  .people-row{
+    background-color:rgba(220, 220, 220, 0.358);
+    margin: 10px 0;
+    padding:15px;
+    border-radius: 15%;
+    text-align: center;
+  }
+  .people img{
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+  }
+  .people-row h3 {
+    text-decoration:none ;
+    margin:10px;
+  }
+  .people-row a{
+    text-decoration:none;
+    border:solid ;
+    border-radius: 10%;
+    padding:7px;
+    background-color: gray;
+    color:rgba(0, 0, 0, 0.539);
+  }
+  .people input {
+    width:100%;
+    margin-right:25px;
+    border-radius: 10px; 
+    border: 1px solid #ccc;
+    font-size: 16px; 
+
+    background-color: #f0f0f0;
+    outline: none; 
+    padding:15px;
+  }
+  /* ---------recruteur---------- */
+  .rec{
+    margin-left :30px;
+  }
+  .profile-main-rec {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+
+
+  }
+  .profil-container , .info-entreprise , .info-entreprise , .critere-selec , .postulation{
+    grid-column: 1/3;
+  
+  }
+  .info-sup{
+    grid-column:3/-1;
+    
+   
+  }
+  .info-sup-rec{
+    position:absolute;
+    top:30px;
+    right:5px;
+    width: 480px;
+    
+  }
+  .info-sup-rec h2{
+    text-align: center;
+   
+  }
+  .candidat-rec{
+    position:absolute;
+    top:870px;
+    right:20px;
+   
+  }
+  .candidat-rec-row{
+    width:300px;
+    
+  }
+ 
+  .candidat-rec-row img{
+    height: 70px;
+    width:70px;
+    border-radius: 50%;
+  }
+  .candidat-rec-row{
+    background-color:rgba(220, 220, 220, 0.358);
+    margin: 10px 0;
+    padding:15px;
+    border-radius: 15%;
+    text-align: center;
+  }
+
+  .candidat-rec-row h3 {
+    text-decoration:none ;
+    margin:5px;
+  }
+  .candidat-rec-row a{
+    text-decoration:none;
+    border:solid ;
+    border-radius: 10%;
+    padding:3px;
+    background-color: gray;
+    color:rgba(0, 0, 0, 0.539);
+  }
+  /* style pour le btnscroll */
+  body > #btnscroll{
+    color:white;
+    font-size: 20px;;
+    width:30px;
+    height:30px;
+    border:none;
+    border-radius:5px;
+    background-color:rgb(81,85,144);
+    cursor:pointer;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    display:none;
+  }
+
+  .upload-message {
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+  
