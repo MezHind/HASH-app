@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>messagerie</title>
+    <link rel="stylesheet" href="style-Amina.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+        <div class="logo">
+           
+            <img src="C:/html/7aja/imlogo.jpeg" alt ="logo" width="150px">
+            </div>
+            <br>
+     <div class="title"> 
+     <h1> Communiquez-vous </h1>
+     </div>
+     <form onsubmit ="sendEmail() ;reset(); return false;">
+        <input type ="text" id="nom" placeholder="votre nom " required>
+        <input type ="email" id="email" placeholder="votre email " required>
+        <input type ="text" id="mobile" placeholder="votre mobile " required>
+        <textarea id="mes" cols="30"rows="4" placeholder="votre message"></textarea>
+        <button id="submet" type="submet">Envoyer</button>
+     </form>
+    </div>
+</div>
+
+
+
+
+<script src ="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+    SecureToken : "0d29b3ca-abc8-48d7-8497-d58cf95bf75a",
+    To : 'karimaamina19752001@gmail.com',
+    From : "karimaamina19752001@gmail.com",
+    Subject : "messagerie",
+    Body : "nom:   "+document.getElementById("nom").value
+    +"<br> Email :  " +document.getElementById ("email").value
+    +"<br> mobile :  " +document.getElementById ("mobile").value
+    +"<br> nom :  " +document.getElementById ("nom").value
+}).then(
+  message => alert("message envoye avec succes")
+);
+    }
+</script>
+</body>
+</html>
