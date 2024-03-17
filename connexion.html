@@ -1,0 +1,45 @@
+  <!DOCTYPE html>
+<html lang="fr" translate="yes">
+<head>
+<title>Connexion</title>
+    <link rel="stylesheet" href="projet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body_cmpt">
+    <div class="lg">
+        <img src="notre_logo.jpg" class="notre_logo">
+       </div>
+<h3 class="PP">
+    Tenez-vous au courant des évolutions de votre monde professionnel
+</h3> 
+<fieldset>
+   
+        <form>
+<h1 class="ss"><ins> S’identifier </ins></h1>
+<form action="connexion.php" method="POST" ><!--class="ms-5 mt-3"-->
+   <div class="form-group">
+<input type="email" placeholder="saisir l'email" id="email" required>
+<label for="email" class="form-label">john.doe@gmail.com</label>
+   </div>
+   <div class="form-group">
+    <input type="password" placeholder="saisir le mot de passe" id="password3" name="password3" required>
+    <label for="password3" class="form-label">MOT DE PASSE<br></label>
+    <input type="submit" value="afficher" class="afficher" onclick="togglePasswordVisibility('password3')">
+   </div>
+   <h4><input type="checkbox">Se souvenir de moi </h4>
+
+<br> 
+
+    <input type="submit" value="S'identifier" class="conn">
+    <div class="ct"><h3>ou</h3></div>
+    <button class="bt_conn"> <img src="go.jpeg" alt="logo de Google" class="logo"> continuer avec Google </button> 
+    <p class="ZZ"> Vous débutez sur site ? <a href="choix.html"  class="identifier"> S'inscrire </a></p>
+</form>
+</fieldset>
+
+<script src="projet.js" defer></script>
+</body>
+
+</html>
